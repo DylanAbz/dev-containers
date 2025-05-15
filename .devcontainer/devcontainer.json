@@ -1,0 +1,21 @@
+{
+  "name": "Spring-Angular-Dev",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "forwardPorts": [4200],
+  // Pas utilisé pour les devcontainers de IDEA
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "angular.ng-template",
+    "esbenp.prettier-vscode",
+    "vscjava.vscode-java-debug",
+    "dbaeumer.vscode-eslint",
+    "vmware.vscode-boot-dev-pack"
+  ],
+  "postCreateCommand": "if [ -f frontend/package.json ]; then npm install --prefix frontend; fi && if [ -f backend/pom.xml ]; then ./mvnw -f backend/pom.xml clean install || true; fi",
+  "remoteUser": "root"
+}

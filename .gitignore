@@ -1,0 +1,34 @@
+# Backend Java / Maven
+/backend/target/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/.idea/
+/backend/*.iml
+
+# Frontend Angular
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.angular/cache/
+/frontend/.env
+
+# Logs
+*.log
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# DevContainer & Docker
+.devcontainer/.env
+.env
+docker-compose.override.yml
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Autres
+*.swp
+*.swo
